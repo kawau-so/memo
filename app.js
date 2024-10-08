@@ -14,7 +14,7 @@ function requestNotificationPermission() {
 // 通知を表示する関数
 function showNotification(message) {
     if (Notification.permission === 'granted') {
-        new Notification('新しい通知', {
+        new Notification('タスク', {
             body: message,
             icon: 'https://via.placeholder.com/100' // 任意のアイコンURL
         });
